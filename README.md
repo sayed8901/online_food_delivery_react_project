@@ -112,13 +112,13 @@ Make sure you have the following software installed on your machine:
 1. Copy the `repository_url` to **Clone the repository**
 
    ```bash
-   git clone https://github.com/sayed8901/job_portal_react_project_frontend.git
+   git clone https://github.com/sayed8901/online_food_delivery_react_project.git
    ```
 
 2. **Navigate to the project directory:**
 
    ```bash
-   cd job_portal_react_project_frontend
+   cd online_food_delivery_react_project
    ```
 
 3. **Install the dependencies:**
@@ -142,19 +142,19 @@ Make sure you have the following software installed on your machine:
   VITE_API_URL=http://127.0.0.1:8000
   ```
 
-* For Vercel deployed server:
+* For OnRender deployed server:
 
   ```bash
-  VITE_API_URL=https://job-portal-system-backend.vercel.app
+  VITE_API_URL=https://online-food-delivery-9i3g.onrender.com
   ```
 
   <br>
 
   - N.B.: If you have cloned the backend project (`https://github.com/sayed8901/job_portal_system_backend`) and perform the `Instructions to Run Locally` section properly, you can get the above mentioned `local server` link...
 
-  - Or, if you don't want to set up the `backend local server`, you can use the `vercel server link` which I have already deployed earlier..
+  - Or, if you don't want to set up the `backend local server`, you can use the `onRender server link` which I have already deployed earlier..
 
-    - `Important:` **Uncomment** the relevant line depending on the server you are currently using (`Vercel deployed server` or `Local server`).
+    - `Important:` **Uncomment** the relevant line depending on the server you are currently using (`omRender deployed server` or `Local server`).
 
 <br>
 
@@ -182,8 +182,8 @@ To unlock and access the full functionality of this site and to perform some rol
 
 You will find the available register options on the top right corner of the `Navbar`.
 
-- **To register as an Employer**: click on the `Employer Register` button.
-- **To register as a Job Seeker**: click on the `Applicant Register` button.
+- **To register as an Employer**: click on the `Owner Register` button.
+- **To register as a Job Seeker**: click on the `User Register` button.
 
 #### Steps to Register:
 
@@ -202,6 +202,8 @@ Once you’ve logged in, you’re ready to interact with the application and wil
 
 ## Conclusion
 
-Thank you for exploring the **Job Portal Project**. This project aims to streamline HR processes and enhance employee management through an user-friendly interface. I hope this application will serve as a valuable tool for HR professionals and organizations.
+Thank you for exploring the **Online Food Delivery**. 
 
-Feel free to contribute to this project by reporting issues, suggesting enhancements, or submitting pull requests. Your feedback is essential in making HRCorp even better. For any queries or support, feel free to reach out!
+Feel free to contribute to this project by reporting issues, suggesting enhancements, or submitting pull requests. 
+
+
