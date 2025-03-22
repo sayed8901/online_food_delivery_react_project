@@ -64,7 +64,7 @@ const Login = () => {
         console.log(successMessage);
 
         // Conditionally redirecting with page refresh
-        window.location.href = "/all_restaurants";
+        window.location.href = "/";
       }
     } catch (error) {
       // Display error message
