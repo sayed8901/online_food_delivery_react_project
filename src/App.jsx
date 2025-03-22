@@ -14,6 +14,8 @@ import AllMenuItemsOnly from "./pages/Restaurant/AllMenuListOnly/AllMenuListOnly
 import MenuListWithCart from "./pages/Restaurant/MenuItemsWithCart/MenuList";
 
 import Orders from "./pages/Orders";
+import Contact from "./components/Contact";
+import PaymentSuccessInfo from "./pages/Payment/PaymentSuccessInfo";
 
 function App() {
   return (
@@ -23,20 +25,26 @@ function App() {
         <div className="flex-grow mt-14">
           <Routes>
             <Route path="/" element={<Home />} />
+
+            <Route path="/owner_register" element={<OwnerRegistration />} />
+            <Route path="/user_register" element={<UserRegistration />} />
+            <Route path="/login" element={<Login />} />
+
             <Route path="/all_restaurants" element={<Restaurants />} />
             <Route path="/add_restaurant" element={<AddRestaurant />} />
+
+            <Route path="/add_menu_item" element={<AddMenuItem />} />
             <Route path="/all_menu_items" element={<AllMenuItemsOnly />} />
             <Route path="/my_menu_items" element={<MenuListWithCart />} />
             <Route
               path="/menu_items/:restaurantId"
               element={<MenuListWithCart />}
             />
-            <Route path="/add_menu_item" element={<AddMenuItem />} />
-            <Route path="/orders" element={<Orders />} />
 
-            <Route path="/owner_register" element={<OwnerRegistration />} />
-            <Route path="/user_register" element={<UserRegistration />} />
-            <Route path="/login" element={<Login />} />
+            <Route path="/my_orders" element={<Orders />} />
+            <Route path="/payment/success/:orderId" element={<PaymentSuccessInfo />} />
+
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
         <Footer />
