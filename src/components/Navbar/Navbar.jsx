@@ -14,10 +14,10 @@ const Navbar = () => {
   useEffect(() => {
     // Fetch user info from localStorage
     const username = localStorage.getItem("username");
-    const userType = localStorage.getItem("user_type");
+    const role = localStorage.getItem("role");
 
-    if (username && userType) {
-      updateUser({ username, userType });
+    if (username && role) {
+      updateUser({ username, role });
     }
   }, []); // N.B.: No dependencies, so this will run only once
 

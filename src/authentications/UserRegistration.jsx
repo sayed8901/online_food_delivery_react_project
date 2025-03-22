@@ -71,7 +71,7 @@ const UserRegistration = () => {
     <div className="container mx-auto">
       <form
         onSubmit={handleSubmit}
-        className="w-full md:w-2/3 lg:w-1/2 mx-auto px-5 mb-10 pt-20"
+        className="w-full md:w-2/3 lg:w-1/2 mx-auto px-5 mb-10 pt-10"
       >
         <div className="space-y-12">
           <div className="border-b border-gray-900/10 pb-12">

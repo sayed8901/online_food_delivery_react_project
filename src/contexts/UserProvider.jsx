@@ -4,7 +4,7 @@ import { UserContext } from "./UserContext";
 const UserProvider = ({ children }) => {
   const [user, setUser] = useState({
     username: localStorage.getItem("username"),
-    userType: localStorage.getItem("user_type"),
+    role: localStorage.getItem("role"),
   });
 
   const updateUser = (newUser) => {

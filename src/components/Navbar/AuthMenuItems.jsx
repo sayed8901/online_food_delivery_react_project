@@ -5,7 +5,7 @@ const AuthMenuItems = ({ user, handleLogout }) => {
   return (
     <div className="flex gap-3 items-center">
       {/* Conditionally render items based on user authentication status */}
-      {user.username && user.userType ? (
+      {user.username && user.role ? (
         <div className="flex gap-3 items-center">
           {/* Profile Info Display */}
           <div
@@ -22,7 +22,7 @@ const AuthMenuItems = ({ user, handleLogout }) => {
                 style={{ filter: "invert(100%)" }}
               />
             </div>
-            <p className="text-white text-sm">({user.userType})</p>
+            <p className="text-white text-sm">({user.role})</p>
           </div>
 
           <button
