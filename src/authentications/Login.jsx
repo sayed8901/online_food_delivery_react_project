@@ -1,5 +1,4 @@
 import { useContext, useState } from "react";
-import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import LoadingSpinner from "../utilities/LoadingSpinner";
 import useTitle from "../utilities/useTitle";
@@ -18,7 +17,6 @@ const Login = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   const { updateUser } = useContext(UserContext); // Get user state from context
-  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setFormData({
@@ -65,12 +63,8 @@ const Login = () => {
         toast.success("Login Successful.");
         console.log(successMessage);
 
-        // Conditionally redirecting
-        if (data.role === "owner") {
-          navigate("/my_menu_items");
-        } else if (data.role === "user") {
-          navigate("/all_menu_items");
-        }
+        // Conditionally redirecting with page refresh
+        window.location.href = "/all_restaurants";
       }
     } catch (error) {
       // Display error message

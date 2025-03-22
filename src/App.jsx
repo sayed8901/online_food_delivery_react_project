@@ -8,9 +8,11 @@ import OwnerRegistration from "./authentications/OwnerRegistration";
 import UserRegistration from "./authentications/UserRegistration";
 import Restaurants from "./pages/Restaurant/Restaurants";
 import AddRestaurant from "./pages/Restaurant/AddRestaurant";
-import AllMenuItems from "./pages/Restaurant/AllMenuItems";
-import RestaurantMenuItems from "./pages/Restaurant/RestaurantMenuItems";
 import AddMenuItem from "./pages/Restaurant/AddMenuItem";
+
+import AllMenuItemsOnly from "./pages/Restaurant/AllMenuListOnly/AllMenuListOnly";
+import MenuListWithCart from "./pages/Restaurant/MenuItemsWithCart/MenuList";
+
 import Orders from "./pages/Orders";
 
 function App() {
@@ -23,13 +25,12 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/all_restaurants" element={<Restaurants />} />
             <Route path="/add_restaurant" element={<AddRestaurant />} />
-            <Route path="/all_menu_items" element={<AllMenuItems />} />
-            <Route path="/menu_items/:restaurantId" element={<AllMenuItems />}
-            />
-            {/* <Route
+            <Route path="/all_menu_items" element={<AllMenuItemsOnly />} />
+            <Route path="/my_menu_items" element={<MenuListWithCart />} />
+            <Route
               path="/menu_items/:restaurantId"
-              element={<RestaurantMenuItems />}
-            /> */}
+              element={<MenuListWithCart />}
+            />
             <Route path="/add_menu_item" element={<AddMenuItem />} />
             <Route path="/orders" element={<Orders />} />
 

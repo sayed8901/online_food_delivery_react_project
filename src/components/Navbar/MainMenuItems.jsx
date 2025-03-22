@@ -15,15 +15,26 @@ const MainMenuItems = ({ user }) => {
       >
         Restaurants
       </NavLink>
-      <NavLink
-        to="/all_menu_items"
-        className="rounded-md p-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white text-center"
-      >
-        All Menu Item
-      </NavLink>
+
+      {user.role === "owner" && (
+        <>
+          <NavLink
+            to="/my_menu_items"
+            className="rounded-md p-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white text-center"
+          >
+            My Menu Item
+          </NavLink>
+        </>
+      )}
 
       {user.role === "user" && (
         <>
+          <NavLink
+            to="/all_menu_items"
+            className="rounded-md p-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white text-center"
+          >
+            All Menu Item
+          </NavLink>
           <NavLink
             to="/my_orders"
             className="rounded-md p-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white text-center"
